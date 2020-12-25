@@ -32,7 +32,7 @@ echo "**** install radarr ****" && \
  tar ixzf \
 	/tmp/radarr.tar.gz -C \
 	/app/radarr/bin --strip-components=1 && \
- echo "UpdateMethod=docker\nBranch=${RADARR_BRANCH}\nPackageVersion=${VERSION}\nPackageAuthor=linuxserver.io" > /app/radarr/package_info && \
+ #echo "UpdateMethod=docker\nBranch=${RADARR_BRANCH}\nPackageVersion=${VERSION}\nPackageAuthor=linuxserver.io" > /app/radarr/package_info && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/app/radarr/bin/Radarr.Update \
