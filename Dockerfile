@@ -17,8 +17,8 @@ RUN \
  apt-get update && \
  apt-get install --no-install-recommends -y \
 	jq \
-	#libicu66 \
-	libmediainfo0v5 \
+	libicu?? \
+	libmediainfo??? \
 	sqlite3 && \
 echo "**** install radarr ****" && \
  mkdir -p /app/radarr/bin && \
