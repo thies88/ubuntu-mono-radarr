@@ -1,4 +1,4 @@
-FROM thies88/ubuntu-mono
+FROM thies88/ubuntu-mono-runtime
 
 # set version label
 ARG BUILD_DATE
@@ -32,7 +32,6 @@ echo "**** install radarr ****" && \
  tar ixzf \
 	/tmp/radarr.tar.gz -C \
 	/app/radarr/bin --strip-components=1 && \
- #echo "UpdateMethod=docker\nBranch=${RADARR_BRANCH}\nPackageVersion=${VERSION}\nPackageAuthor=linuxserver.io" > /app/radarr/package_info && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/app/radarr/bin/Radarr.Update \
