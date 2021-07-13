@@ -1,4 +1,4 @@
-FROM thies88/base-ubuntu
+FROM thies88/base-ubuntu:focal
 
 # set version label
 ARG BUILD_DATE
